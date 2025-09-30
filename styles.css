@@ -1,0 +1,39 @@
+/* Transition Example on Button */
+button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  /* Smooth transition for hover effect */
+  transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: darkslategray;
+}
+
+/* Box for animation demo */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 20px;
+
+  /* Transition for smooth resizing */
+  transition: width 1s ease, height 1s ease, background-color 1s ease;
+}
+
+/* Keyframe Animation for Bounce */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+/* Class applied when animation triggers */
+.animate {
+  animation: bounce 1s ease-in-out;
+}
